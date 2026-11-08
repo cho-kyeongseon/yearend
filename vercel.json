@@ -1,0 +1,6 @@
+{
+  "framework": null,
+  "installCommand": "echo 설치할 패키지 없음",
+  "buildCommand": "python3 build_web.py || echo '[주의] build_web.py 실행 실패 - 저장소에 있는 web/data 를 그대로 사용합니다'",
+  "outputDirectory": "web"
+}
