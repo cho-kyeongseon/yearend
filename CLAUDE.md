@@ -13,4 +13,4 @@
 - Vercel 사이트: https://yearend-teal.vercel.app
 - 원본 자료(PDF·ZIP·HWP, `data/`)는 .gitignore로 제외돼 GitHub에 올라가지 않는다.
 - 경로는 모두 `Path(__file__)` 기준 상대 경로로 쓴다. 드라이브 문자(D:, E: 등)를 코드에 적지 않는다.
-- 이제 이 폴더 자체가 저장소이므로 `make_deploy.py`로 `배포/` 폴더를 만들 필요가 없다.
+- 이 폴더 자체가 저장소다. 배포 전에는 `build_web.py`로 `web/data`를 갱신한 뒤 커밋·푸시한다. (예전 `배포/` 폴더·`make_deploy.py` 방식은 없앴다)

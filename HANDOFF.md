@@ -6,5 +6,6 @@
 - .gitignore로 원본 자료(PDF·ZIP·HWP, data/), .venv, `배포/` 폴더를 제외했다.
 - Vercel 프로젝트는 이미 연결돼 있었다: https://yearend-teal.vercel.app
 
-## 다음에 할 일
-- `배포/` 폴더와 `make_deploy.py`는 더 이상 필요 없음. 정리할지 결정.
+## 2026-11-12 배포 방식 정리
+- `배포/` 폴더(옛 GitHub 업로드용 복사본)와 `make_deploy.py`를 삭제했다. 내용은 모두 GitHub 첫 커밋(a0c3349)에 남아 있다.
+- 배포안내.md를 새 방식(USB 폴더에서 `build_web.py` 실행 → main 푸시 → Vercel 자동 배포)으로 고쳐 썼다.
