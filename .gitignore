@@ -1,0 +1,31 @@
+# 원본 자료 (국세청 안내 PDF·ZIP·HWP 등) - GitHub에 올리지 않음
+*.pdf
+*.zip
+*.hwp
+*.hwpx
+*.xlsx
+*.xls
+*.docx
+data/
+
+# 배포 복사본 폴더 (이제 저장소 자체가 배포 원본이라 불필요)
+배포/
+
+# 파이썬 가상환경·캐시
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# 비밀값·로컬 설정
+.env
+.env.*
+.vercel/
+.claude/settings.local.json
+
+# 운영체제·편집기 부산물
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
