@@ -14,3 +14,9 @@
 - 기존 .venv는 다른 PC(seoil 계정 anaconda)의 파이썬을 가리켜 이 PC에서 작동하지 않았다.
 - USB 폴더에 휴대용 파이썬 `python/`(CPython 3.13.18, python-build-standalone 20261026)을 넣고 requirements.txt 패키지를 설치했다.
 - 앱은 `앱실행.bat` 또는 `python\python.exe -m streamlit run app.py`로 실행한다. PC에 파이썬 설치가 필요 없다.
+
+## 2026-11-12 PC 파이썬 방식으로 다시 전환
+- 작업할 컴퓨터에는 모두 파이썬이 설치돼 있어서, USB 휴대용 파이썬(약 900MB, USB라 느림)을 지우고 각 PC의 파이썬을 쓰기로 했다.
+- 이 PC: winget으로 Python 3.13.17 설치, requirements.txt 패키지 설치 완료.
+- `앱실행.bat`은 `py`(없으면 `python`)를 찾아 쓰고, 패키지가 없으면 자동 설치한다.
+- 주의: Anaconda만 있고 PATH에 등록 안 된 PC에서는 파이썬을 못 찾을 수 있다. 그때는 PATH 등록 또는 bat 수정 필요.

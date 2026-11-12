@@ -3,14 +3,14 @@
   "configurations": [
     {
       "name": "yearend-bot",
-      "runtimeExecutable": "python\\python.exe",
-      "runtimeArgs": ["-m", "streamlit", "run", "app.py", "--server.port", "8501", "--server.headless", "true"],
+      "runtimeExecutable": "py",
+      "runtimeArgs": ["-3", "-m", "streamlit", "run", "app.py", "--server.port", "8501", "--server.headless", "true"],
       "port": 8501
     },
     {
       "name": "web",
-      "runtimeExecutable": "python\\python.exe",
-      "runtimeArgs": ["-m", "http.server", "8600", "--directory", "web"],
+      "runtimeExecutable": "py",
+      "runtimeArgs": ["-3", "-m", "http.server", "8600", "--directory", "web"],
       "port": 8600
     }
   ]
