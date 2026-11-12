@@ -8,8 +8,10 @@
 *.docx
 data/
 
-# 파이썬 가상환경·캐시
+# 파이썬: USB 휴대용 파이썬(python/)·가상환경·캐시
+python/
 .venv/
+.venv_old/
 venv/
 __pycache__/
 *.pyc

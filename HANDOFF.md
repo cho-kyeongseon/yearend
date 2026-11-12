@@ -9,3 +9,8 @@
 ## 2026-11-12 배포 방식 정리
 - `배포/` 폴더(옛 GitHub 업로드용 복사본)와 `make_deploy.py`를 삭제했다. 내용은 모두 GitHub 첫 커밋(a0c3349)에 남아 있다.
 - 배포안내.md를 새 방식(USB 폴더에서 `build_web.py` 실행 → main 푸시 → Vercel 자동 배포)으로 고쳐 썼다.
+
+## 2026-11-12 USB 휴대용 파이썬으로 전환
+- 기존 .venv는 다른 PC(seoil 계정 anaconda)의 파이썬을 가리켜 이 PC에서 작동하지 않았다.
+- USB 폴더에 휴대용 파이썬 `python/`(CPython 3.13.18, python-build-standalone 20261026)을 넣고 requirements.txt 패키지를 설치했다.
+- 앱은 `앱실행.bat` 또는 `python\python.exe -m streamlit run app.py`로 실행한다. PC에 파이썬 설치가 필요 없다.

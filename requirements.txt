@@ -1,0 +1,5 @@
+# 로컬 실행용 패키지 (Vercel 정적 사이트에는 필요 없음)
+# 설치(USB 휴대용 파이썬에): python\python.exe -m pip install -r requirements.txt
+streamlit==1.67.0
+pymupdf==2.1
+olefile==0.47
