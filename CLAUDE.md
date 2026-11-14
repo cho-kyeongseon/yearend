@@ -9,7 +9,7 @@
 - 작업이 한 단락 끝나면 HANDOFF.md를 업데이트한다.
 
 ## 참고
-- GitHub: https://github.com/cho-kyeongseon/yearend (main에 푸시하면 Vercel 자동 배포)
+- GitHub: https://github.com/cho-kyeongseon/yearend-helper (main에 푸시하면 Vercel 자동 배포)
 - Vercel 사이트: https://yearend-teal.vercel.app
 - 원본 자료(PDF·ZIP·HWP, `data/`)는 .gitignore로 제외돼 GitHub에 올라가지 않는다.
 - 파이썬은 작업하는 컴퓨터에 설치된 것을 쓴다(`py` 런처, 없으면 PATH의 `python`). USB에 파이썬이나 .venv를 두지 않는다. (.venv는 만든 PC의 파이썬 절대 경로에 묶여 다른 PC·드라이브에서 깨진다)

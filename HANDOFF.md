@@ -1,9 +1,9 @@
 # HANDOFF
 
-> 마지막 업데이트: 2026-11-12 (작업 마무리)
+> 마지막 업데이트: 2026-11-14 (폴더·저장소 이름 변경)
 
 ## 현재 상태
-- USB의 `연말정산` 폴더 = GitHub `cho-kyeongseon/yearend`(공개 저장소)의 main 브랜치. 커밋할 변경 없이 깨끗한 상태.
+- USB의 `연말정산 도우미` 폴더 = GitHub `cho-kyeongseon/yearend-helper`(공개 저장소)의 main 브랜치. 커밋할 변경 없이 깨끗한 상태.
 - main에 푸시하면 Vercel이 자동 배포한다. 사이트: https://yearend-teal.vercel.app (최근 배포 모두 성공)
 - Streamlit 앱(`app.py`)은 이 PC의 파이썬으로 실행 확인함. 서버 4~6초, 화면 3초. 빠른 질문 "월세 세액공제" 답변 정상.
 - `build_web.py` 정상 동작 (항목 14개, FAQ 36개).
@@ -36,7 +36,7 @@
 
 ## 주의할 점
 - GitHub 저장소는 **공개**다. 커밋하는 파일에 개인정보·계정 이름·비밀값을 넣지 않는다. (이전 커밋 6d0cfd1, 3eef413에 이전 PC 계정 이름이 남아 있지만 그대로 두기로 했다)
-- USB는 Git이 파일 소유자를 확인하지 못해서, 새 PC나 드라이브 문자가 바뀐 경우 처음 한 번 `git config --global --add safe.directory <작업 폴더 경로>`가 필요하다.
+- USB는 Git이 파일 소유자를 확인하지 못해서, 새 PC나 드라이브 문자·폴더 이름이 바뀐 경우 처음 한 번 `git config --global --add safe.directory <작업 폴더 경로>`가 필요하다.
 - USB에 .venv나 휴대용 파이썬을 두지 않는다(절대 경로에 묶이거나, 크고 느림).
 - 기본 브랜치는 main. 다른 브랜치는 요청할 때만 쓴다.
 
@@ -45,7 +45,7 @@
 # 작업 기록
 
 ## 2026-11-12 저장소 연결
-- USB 작업 폴더(연말정산) 자체를 GitHub `cho-kyeongseon/yearend`(main)에 연결했다.
+- USB 작업 폴더(연말정산) 자체를 GitHub `cho-kyeongseon/yearend`(main)에 연결했다. (2026-11-14에 `yearend-helper`로 이름 변경)
 - 로컬에만 있던 소스(app.py, bot.py, ingest.py, rag.py, make_deploy.py, 배포안내.md, .claude/launch.json)를 저장소에 추가했다.
 - .gitignore로 원본 자료(PDF·ZIP·HWP, data/), .venv, `배포/` 폴더를 제외했다.
 - Vercel 프로젝트는 이미 연결돼 있었다: https://yearend-teal.vercel.app
@@ -87,3 +87,9 @@
 - Anaconda 파이썬 3.13.9, `%USERPROFILE%\anaconda3\python.exe`
 - 처음 .venv를 이 파이썬으로 만들었다(현재는 삭제됨). 이 PC에서 `앱실행.bat`이 파이썬을 못 찾으면 Anaconda를 PATH에 등록하거나 bat에 Anaconda 경로 찾기를 추가해야 한다.
 - 이 PC에 프로젝트 패키지가 설치돼 있는지는 아직 확인하지 않았다. 처음 `앱실행.bat`을 실행하면 자동 설치된다.
+
+## 2026-11-14 폴더·저장소 이름 변경
+- GitHub 저장소 이름을 `yearend` → `yearend-helper`로 바꿨다. 예전 주소는 GitHub가 새 주소로 자동 연결해 준다. origin 주소도 새 주소로 바꿨다.
+- USB 작업 폴더 이름을 `연말정산` → `연말정산 도우미`로 바꿨다. 프로그램은 모두 상대 경로라 영향이 없다.
+- 폴더 이름이 바뀌었으니 Git 소유권 예외(safe.directory)도 새 경로로 다시 등록해야 한다.
+- Vercel 사이트 주소(yearend-teal.vercel.app)는 그대로다.
